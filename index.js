@@ -39,7 +39,7 @@ const menu = [
 
 
 
-/*const opcCambioRol = [
+const opcCambioRol = [
     {
         type: 'input',
         message: '¿Cuál es el nombre del empleado al que deseas cambiar el rol ? ',
@@ -85,7 +85,7 @@ const opcAgregaDepto = [
         name: 'new-depto'
     },
 ];
-*/
+
 
 function agregaEmpleado() {
 
@@ -139,21 +139,21 @@ function agregaEmpleado() {
 
 }
 
-/*function cambiarRol() {
-    /*  db.query('SELECT primer_nombre AS nombre, apellido AS apellidos FROM empleado', function (err, results) {
-          if (err) throw err;
-    // console.log(results);
-    inquirer.prompt(opcCambioRol).then((opcCambioRolData) => {
-        db.query('UPDATE empleado SET rol_id = opcCambioRolData.new_role WHERE primer_nombre = opcCambioRolData.employeeNameChange_role AND apellido = opcCambioRolData.employeeLastNameChange_role', function (err, results) {
-            if (err) throw err
-            else console.log(results);
-            //  CAMBIAR ROL DE EMPLEADO EN LA BASE DE DATOS
-        }).then(() => menuInit())
+function cambiarRol() {
+    db.query('SELECT primer_nombre AS nombre, apellido AS apellidos FROM empleado', function (err, results) {
+        if (err) throw err;
+        // console.log(results);
+        inquirer.prompt(opcCambioRol).then((opcCambioRolData) => {
+            db.query('UPDATE empleado SET rol_id = opcCambioRolData.new_role WHERE primer_nombre = opcCambioRolData.employeeNameChange_role AND apellido = opcCambioRolData.employeeLastNameChange_role', function (err, results) {
+                if (err) throw err
+                else console.log(results);
+                //  CAMBIAR ROL DE EMPLEADO EN LA BASE DE DATOS
+            }).then(() => menuInit())
 
 
 
-    });
-}
+        });
+    }}
 
 function despliega(dato) {
     if (dato === 'roles') {
@@ -193,7 +193,7 @@ function agregarDepto() {
         //  AGREGAR DEPARTAMENTO EN LA BASE DE DATOS
     }).then(() => menuInit());
 }
-*/
+
 
 // TODO: Crear una función para inicializar la aplicación
 const init = () => {
