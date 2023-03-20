@@ -1,0 +1,25 @@
+{
+  "name": "sistema-de-gestion-de-contenido-de-empleados-de-una-empresa",
+  "version": "1.0.0",
+  "description": "Aplicación de línea de comandos para administrar la base de datos de empleados de una empresa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorecio/Sistema-de-gestion-de-contenido-de-empleados-de-una-empresa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorecio/Sistema-de-gestion-de-contenido-de-empleados-de-una-empresa/issues"
+  },
+  "homepage": "https://github.com/dorecio/Sistema-de-gestion-de-contenido-de-empleados-de-una-empresa#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3"
+  }
+}
